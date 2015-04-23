@@ -10,6 +10,7 @@ plugins=(capistrano git tmux)
 
 fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 
+source /etc/profile
 source ~/.jumpbox-tools/zsh/aliases
 source ~/.jumpbox-tools/zsh/helpers
 source $ZSH/oh-my-zsh.sh
