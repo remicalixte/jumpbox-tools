@@ -1,6 +1,12 @@
 #!/bin/bash
 
-# GROS MÉNAGE
+if [[ $SHELL != *"zsh" ]]
+then
+    echo "You need to have ZSH as your default shell !"
+    exit
+fi
+
+# Clean everything
 cd ~
 # Don't delete .ssh otherwise you cannot get in!!
 rm -rf .bin* .cache* .chef* .config* .lesshst .oh-my-zsh .zcomp* .zsh*
@@ -16,3 +22,4 @@ cd ~/.jumpbox-tools
 ./links.sh
 
 exec zsh
+. ~/.zshrc
