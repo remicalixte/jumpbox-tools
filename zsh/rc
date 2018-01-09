@@ -1,3 +1,7 @@
+mainroles(){
+    cat /etc/update-motd.d/95-roles | tail -n+6 | grep -vE 'Tags:' | grep -vE '^Instance Type:|^\*\*|^$' | grep -vE '^AZ: ' | grep -Ev 'agent-prod-to-staging|canary-security-logging|common-node|dog-base|encrypted-storage|go-perf|monitoring-client' | paste -d',' -s -
+}
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -8,7 +12,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status)
 POWERLEVEL9K_CUSTOM_VM="environmentuc"
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="254"
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="092"
-POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`mainroles` \ue251"
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`mainroles`:%m \ue251"
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="161"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="254"
 POWERLEVEL9K_DIR_HOME_BACKGROUND="161"
