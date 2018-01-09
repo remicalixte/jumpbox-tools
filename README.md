@@ -23,5 +23,3 @@ curl -L https://raw.githubusercontent.com/Gandem/jumpbox-tools/master/bootstrap.
 - [ENV] `pg` on a postgres box to log into pg
 - [ENV] `pydir`, `pycd`, `pymod` to jump to python modules
 - [ENV] `howold` to get instance age
-- [VM] `gocheck` in a go project to run `fmt`, `vet`, `lint`
-- [VM] `goforit` to jump to dd-go folder
