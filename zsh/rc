@@ -33,7 +33,6 @@ plugins=(capistrano git python screen z zsh-syntax-highlighting)
 
 fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 
-source /etc/profile
 source ~/.jumpbox-tools/zsh/aliases
 source ~/.jumpbox-tools/zsh/helpers
 source $ZSH/oh-my-zsh.sh
