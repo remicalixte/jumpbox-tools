@@ -2,7 +2,7 @@
 
 ## Installation
 
-On an env, local or the VM:
+On an env:
 You shouldn't do this if you don't know what you are doing:
 
 ```
@@ -11,9 +11,7 @@ curl -L https://raw.githubusercontent.com/Gandem/jumpbox-tools/master/bootstrap.
 
 ## Features
 
-- Cross-compatible `prod`, `staging`, `VM`, `local` (OSX)
-- Go version is usually up-to-date, separate compiled package for OSX/VM (`/pkg`)
-- zsh theme is powelevel9k with SOON custom color scheme for `prod`, `staging`, `local`, `vm`
+- zsh theme is powelevel9k with SOON custom color scheme for `prod`, `staging`
 - plugins are `git`, `python`, `screen`, `z`, `zsh-syntax-highlighting`
 
 
