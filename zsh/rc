@@ -37,6 +37,7 @@ fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 source ~/.jumpbox-tools/zsh/aliases
 source ~/.jumpbox-tools/zsh/helpers
 source $ZSH/oh-my-zsh.sh
+source /etc/profile
 
 if [[ $(environmentuc) == "STAGING" ]] then
     POWERLEVEL9K_CUSTOM_VM="echo 'STAGING \ue70d'"
