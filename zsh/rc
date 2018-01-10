@@ -43,3 +43,5 @@ if [[ $(environmentuc) == "STAGING" ]] then
 elif [[ $(environmentuc) == "PROD" ]] then
     POWERLEVEL9K_CUSTOM_VM="echo '\uf071 \uf0e7 PROD \ue780 \uf071'"
 fi
+
+title $(echo $(environmentuc)-$(mainroles))
