@@ -40,5 +40,5 @@ source $ZSH/oh-my-zsh.sh
 if [[ $(environmentuc) == "STAGING" ]] then
     POWERLEVEL9K_CUSTOM_VM="echo 'STAGING \ue70d'"
 elif [[ $(environmentuc) == "PROD" ]] then
-    POWERLEVEL9K_CUSTOM_VM="echo '\uf0e7 PROD \ue780'"
+    POWERLEVEL9K_CUSTOM_VM="echo '\uf071 \uf0e7 PROD \ue780 \uf071'"
 fi
