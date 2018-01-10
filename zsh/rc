@@ -27,6 +27,7 @@ POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="254"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(capistrano git python screen z zsh-syntax-highlighting)
