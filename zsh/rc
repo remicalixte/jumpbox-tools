@@ -34,10 +34,10 @@ plugins=(capistrano git python screen z zsh-syntax-highlighting)
 
 fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 
+source /etc/profile
 source ~/.jumpbox-tools/zsh/aliases
 source ~/.jumpbox-tools/zsh/helpers
 source $ZSH/oh-my-zsh.sh
-source /etc/profile
 
 if [[ $(environmentuc) == "STAGING" ]] then
     POWERLEVEL9K_CUSTOM_VM="echo 'STAGING \ue70d'"
