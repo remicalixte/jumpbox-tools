@@ -32,3 +32,6 @@ rmlink htoprc ~/.config/htop/htoprc
 
 # vim
 rmlink vim/vimrc ~/.vimrc
+
+# screen
+rmlink screen/rc ~/.screenrc
