@@ -7,6 +7,11 @@ alias c="clear"
 alias whoiam="curl -s 169.254.169.254/latest/meta-data/iam/info"
 alias cap="cap -f /etc/capistrano/Capfile"
 
+ssh () {
+    command ssh "$@";
+    [[ -z ${STY} || -z ${WINDOW} ]] && echo || screen -S ${STY} -p ${WINDOW} -X title "$(mainroles)-$(hostname | sed 's/i\-//')"
+}
+
 pydir () {
     python -c "import $1,os; print os.path.dirname($1.__file__)"
 }
