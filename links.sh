@@ -20,7 +20,6 @@ rmlink bin ~/.bin
 rmlink git/config ~/.gitconfig
 
 # ssh
-rmlink ssh/rc ~/.ssh/rc
 rmlink ssh/config ~/.ssh/config
 
 # gdb!
