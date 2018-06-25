@@ -48,5 +48,5 @@ fi
 
 title $(echo $(environmentuc)-$(mainroles))
 
-# set screen title if inside a screen window
-[[ -z ${STY} || -z ${WINDOW} ]] && echo || screen -S ${STY} -p ${WINDOW} -X title "$(mainroles)-$(hostname | sed 's/i\-//')"
+# set screen title
+echo -en "\033k$(mainroles)-$(hostname | sed 's/i\-//')\033\ \n"
