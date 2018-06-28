@@ -1,7 +1,7 @@
 term xterm-256color
 hardstatus off
 hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-w%?%{r}(%{W}%n %t%?(%u)%?%{r})%{w}%?%+w%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+hardstatus string '[%= %{= kw}%?%-w%?%{r}(%{W}%n %t%?(%u)%?%{r})%{w}%?%+w%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
 setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 # Enable mouse scrolling and scroll bar history scrolling
 termcapinfo xterm* ti@:te@
