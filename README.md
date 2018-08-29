@@ -6,7 +6,7 @@ On an env:
 You shouldn't do this if you don't know what you are doing:
 
 ```
-curl -L https://raw.githubusercontent.com/Gandem/jumpbox-tools/master/bootstrap.sh | sh
+curl -L https://raw.githubusercontent.com/remicalixte/jumpbox-tools/master/bootstrap.sh | sh
 ```
 
 ## Features
