@@ -14,8 +14,7 @@ rm -rf .bin* .cache* .chef* .config* .lesshst .oh-my-zsh .zcomp* .zsh*
 rm -rf .jumpbox-tools
 
 # Clone ourselves
-git clone https://github.com/Gandem/jumpbox-tools.git ~/.jumpbox-tools
-
+git clone git@github.com:remicalixte/jumpbox-tools ~/.jumpbox-tools
 cd ~/.jumpbox-tools
 
 ./installs.sh
