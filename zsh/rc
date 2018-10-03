@@ -34,6 +34,13 @@ plugins=(capistrano git python screen z zsh-syntax-highlighting knife)
 
 fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 
+# hack to get bash completion with zsh
+autoload bashcompinit
+bashcompinit
+complete -F _list_consul_services ssh_to_role
+complete -F _list_consul_services hosts_by_role
+complete -F _list_consul_services ip_of
+
 source ~/.jumpbox-tools/zsh/aliases
 source ~/.jumpbox-tools/zsh/helpers
 source $ZSH/oh-my-zsh.sh
