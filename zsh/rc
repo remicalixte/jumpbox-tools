@@ -30,7 +30,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(capistrano git python screen z zsh-syntax-highlighting knife)
+plugins=(capistrano git python screen zsh-syntax-highlighting knife)
 
 fpath=(~/.jumpbox-tools/zsh/completion $fpath)
 
