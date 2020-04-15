@@ -35,3 +35,6 @@ rmlink vim/vimrc ~/.vimrc
 
 # screen
 rmlink screen/rc ~/.screenrc
+
+mkdir -p ~/.terminfo/x
+rmlink terminfo/xterm-kitty ~/.terminfo/x/xterm-kitty
